@@ -1,0 +1,152 @@
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    scroll-behavior: smooth;
+    /* scroll-padding: 25px; */
+}
+#top-nav-bar, #top-nav-bar{
+    position: fixed;
+    z-index: 9998;
+}
+
+#nav-mobile {
+    position: absolute;
+    z-index: 9998; 
+}
+
+.sidenav {
+    z-index: 9999; 
+    background-color: gray ;
+}
+#nav-mobile li{
+    border-radius: 40%;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+}
+a{
+    text-align: center;
+    justify-content: center;
+}
+.active a{
+    color:rgb(212, 191, 70) !important;
+}
+
+footer, footer a{
+    color: rgb(212, 191, 70) !important;
+}
+
+.divider{
+    background-color: rgb(144, 127, 29, 0.4) !important;
+}
+
+.materialboxed .active{
+    z-index: 9999;
+}
+
+
+
+@media only screen and (min-width: 995px) {
+    #logo{
+        margin-left: 7%;
+        margin-top: 1.5%;
+    }
+    #nav-mobile a{
+        width: auto;
+        
+    }
+}
+@media only screen and (max-width: 996px) {
+    #logo, a, #sidenav-trigger{
+        margin-top: 1.5%;
+    }
+    #header-xolos h1 blockquote{
+        font-size: 35%;
+    }
+}
+/* For screens smaller than 600px (e.g., smartphones) */
+@media (max-width: 599px) {
+    .collection-header h5 {
+        font-size: 20px; /* Decrease font size for smaller screens */
+    }
+    
+    .collection-item {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        text-align: center;
+    }
+    
+    .collection-item div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* For screens larger than 600px (e.g., tablets and desktops) */
+@media (min-width: 600px) {
+    .collection-header h5 {
+        font-size: 24px; /* Maintain a larger font size for larger screens */
+    }
+    
+    .collection-item {
+        flex-direction: row; /* Restore horizontal layout */
+    }
+    
+    .collection-item div {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 675px) {
+    #header-xolos h1, #about-text, #health-care-text, h3, #history-text{
+        font-size: 30px; 
+    }
+    #about-text-info, #compare-text{
+        font-size: 10px; 
+    }
+}
+@media only screen and (max-width: 375px) {
+    #about-text p{
+        font-size: 30px; 
+        font-size: 10px; 
+    }
+    #header-xolos h1{
+        font-size: 28px;
+    }
+    #compare-text{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 280px) {
+    #about-text p{
+        font-size: 20px; 
+    }
+    #header-xolos h1{
+        font-size: 15px;
+    }
+    #compare-text{
+        font-size: 6px;
+        
+    }
+    .collection-header h5{
+        font-size: 15px;
+    }
+}
+
+.card-panel {
+    background-color: black;
+    color: rgb(212, 191, 70);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+/* Hover effect */
+.card-panel:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
